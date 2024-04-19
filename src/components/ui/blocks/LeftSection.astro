@@ -41,8 +41,7 @@ interface Props {
     <p
       class="mb-4 max-w-prose text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg"
     >
-      <!-- {subTitle} -->
-      <Fragment set:html={subTitle} />
+      {subTitle}
     </p>
     <!-- Conditionally render the Primary CTA button if btnExists is true -->
     {btnExists ? <PrimaryCTA title={btnTitle} url={btnURL} /> : null}
