@@ -17,7 +17,7 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
 ---
 
 <!-- Contact Us -->
-<section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+<section id="Contact" class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
   <div class="mx-auto max-w-2xl lg:max-w-5xl">
     <div class="text-center">
       <h1
@@ -76,7 +76,7 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
 
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
-        <ContactIconBlock
+        <!-- <ContactIconBlock
           heading="Knowledgebase"
           content="Browse through all of our knowledgebase articles."
           isLinkVisible={true}
@@ -94,13 +94,29 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
           linkURL="#"
           isArrowVisible={true}
           ><Icon name="chatBubble" />
+        </ContactIconBlock> -->
+
+        <ContactIconBlock
+          heading="Woodwell Tools Manufacturing Ltd."
+          content="China Manufacturing Site"
+          isAddressVisible={true}
+          addressContent="5 Shunfu Road East, Heshun Hegui Industrial Estate Phrase B, Lishui Town, Nanhai District, Foshan City, Guangdong 528241, China"
+          ><Icon name="mapPin" />
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Visit our office"
-          content="UK ScrewFast"
+          heading="Woodwell Optical Technology Ltd."
+          content="China Manufacturing Site"
           isAddressVisible={true}
-          addressContent="72 Union Terrace, E10 4PE London"
+          addressContent="Mahewan, Shengqiaocun, Lujiang Xian, Hefei, Anhui 231541, China"
+          ><Icon name="mapPin" />
+        </ContactIconBlock>
+
+        <ContactIconBlock
+          heading="Wah Tat Hardware & Tools Limited"
+          content="Hong Kong Sales Office"
+          isAddressVisible={true}
+          addressContent="Rm. 1103, Fuk Keung Industrial Building, 66-68 Tong Mei Road, Kowloon, Hong Kong"
           ><Icon name="mapPin" />
         </ContactIconBlock>
 
@@ -108,7 +124,7 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
           heading="Contact us by email"
           content="Prefer the written word? Drop us an email at"
           isLinkVisible={true}
-          linkTitle="support@screwfast.uk"
+          linkTitle="support@mujingfang.power-funnels.com"
           linkURL="#"
           ><Icon name="envelopeOpen" />
         </ContactIconBlock>

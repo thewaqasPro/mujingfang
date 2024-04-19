@@ -1,26 +1,25 @@
-
 const navBarLinks = [
-  { name: "Accueil", url: "/fr" },
-  { name: "Produits", url: "/fr/products" },
-  { name: "Services", url: "/fr/services" },
-  { name: "Blog", url: "/fr/blog" },
-  { name: "Contact", url: "/fr/contact" },
+  { name: "Accueil", url: "#" },
+  { name: "Produits", url: "#" },
+  { name: "Services", url: "#" },
+  { name: "Blog", url: "#" },
+  { name: "Contact", url: "#" },
 ];
 
 const footerLinks = [
   {
     section: "Écosystème",
     links: [
-      { name: "Documentation", url: "/fr/welcome-to-docs/" },
-      { name: "Outils et Équipements", url: "/fr/products" },
-      { name: "Services de Construction", url: "/fr/services" },
+      { name: "Documentation", url: "#" },
+      { name: "Outils et Équipements", url: "#" },
+      { name: "Services de Construction", url: "#" },
     ],
   },
   {
     section: "Société",
     links: [
       { name: "À propos de nous", url: "#" },
-      { name: "Blog", url: "/fr/blog" },
+      { name: "Blog", url: "#" },
       { name: "Carrières", url: "#" },
       { name: "Clients", url: "#" },
     ],
@@ -30,7 +29,7 @@ const footerLinks = [
 const socialLinks = {
   facebook: "#",
   x: "#",
-  github: "https://github.com/mearashadowfax/ScrewFast",
+  github: "#",
   google: "#",
   slack: "#",
 };

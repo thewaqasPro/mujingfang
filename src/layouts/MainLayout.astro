@@ -39,7 +39,7 @@ We set the language of the page to English and add classes for scrollbar and scr
         document.documentElement.classList.remove("dark");
       }
     </script>
-    <script is:inline src="/scripts/vendor/lenis/lenis.js"></script>
+    <!-- <script is:inline src="/scripts/vendor/lenis/lenis.js"></script>
     <script is:inline>
       // Script to handle Lenis library settings for smooth scrolling
       const lenis = new Lenis({ smooth: true, smoothTouch: false });
@@ -49,11 +49,11 @@ We set the language of the page to English and add classes for scrollbar and scr
         requestAnimationFrame(raf);
       }
 
-      requestAnimationFrame(raf);
-    </script>
+      // requestAnimationFrame(raf);
+    </script> -->
   </head>
   <body
-    class="bg-neutral-200 selection:bg-yellow-400 selection:text-neutral-700 dark:bg-neutral-800"
+    class="-bg-neutral-200 selection:bg-yellow-400 selection:text-neutral-700 dark:bg-neutral-800"
   >
     <!--
     Setting up the main structure of the page.
@@ -67,6 +67,10 @@ We set the language of the page to English and add classes for scrollbar and scr
     </div>
     <FooterSection />
     <style>
+    
+      html {
+        scroll-behavior: smooth !important;
+      }
       /* CSS rules for the page scrollbar and scrolling experience with lenis library */
       .scrollbar-hide::-webkit-scrollbar {
         display: none;
@@ -77,13 +81,13 @@ We set the language of the page to English and add classes for scrollbar and scr
         scrollbar-width: none;
       }
 
-      html.lenis,
+      /* html.lenis,
       html.lenis body {
         height: auto;
       }
 
       .lenis.lenis-smooth {
-        scroll-behavior: auto !important;
+        scroll-behavior: smooth !important;
       }
 
       .lenis.lenis-smooth [data-lenis-prevent] {
@@ -96,7 +100,8 @@ We set the language of the page to English and add classes for scrollbar and scr
 
       .lenis.lenis-scrolling iframe {
         pointer-events: none;
-      }
+      } */
     </style>
+    <script is:inline src="//code.tidio.co/fajdtkqtfy4wlowks4w4nhxfytqskgmb.js" async></script>
   </body>
 </html>

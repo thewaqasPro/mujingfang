@@ -1,56 +1,57 @@
 # Versatile Landing, Blog & Docs Template for a Simplified Web Presence
 
-![ScrewFast](https://github.com/mearashadowfax/ScrewFast/assets/125820963/cdf299bd-414a-4a2d-baf0-d188bb4709c7)
+![MujingFang](https://github.com/mearashadowfax/MujingFang/assets/125820963/cdf299bd-414a-4a2d-baf0-d188bb4709c7)
 
-ScrewFast is an open-source template designed for quick and efficient web project setup, blending minimalism with functionality. Whether you're showcasing a portfolio, launching a company landing page, or running a blog, ScrewFast provides everything you need. By combining the power of the [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and [Preline UI](https://preline.co/), this template offers a functional and aesthetically pleasing solution for your web presence.
+MujingFang is an open-source template designed for quick and efficient web project setup, blending minimalism with functionality. Whether you're showcasing a portfolio, launching a company landing page, or running a blog, MujingFang provides everything you need. By combining the power of the [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and [Preline UI](https://preline.co/), this template offers a functional and aesthetically pleasing solution for your web presence.
 
-**[View Live Demo](https://screwfast.uk)**
+**[View Live Demo](https://mujingfang.power-funnels.com)**
 
 ## Table of Contents
-  * [Why Choose ScrewFast?](#why-choose-screwfast)
-  * [Features](#features)
-  * [What's New](#whats-new)
-  * [Getting Started](#getting-started)
-    + [Installation](#installation)
-    + [Development Commands](#development-commands)
-  * [Deployment](#deployment)
-    + [Building Your Site](#building-your-site)
-    + [Deploying to Vercel](#deploying-to-vercel)
-  * [Project Structure](#project-structure)
-  * [Static Assets and Public Resources](#static-assets-and-public-resources)
-  * [Customization](#customization)
-    + [Editing Component Variables](#editing-component-variables)
-    + [Props in Component Instances](#props-in-component-instances)
-    + [Customizing Navigation and Footer Links](#customizing-navigation-and-footer-links)
-      - [Navigation Bar Links](#navigation-bar-links)
-      - [Footer Links](#footer-links)
-      - [Social Media Links](#social-media-links)
-  * [Integrations and Enhancements](#integrations-and-enhancements)
-    + [Starlight Documentation](#starlight-documentation)
-    + [Lenis for Smooth Scrolling](#lenis-for-smooth-scrolling)
-    + [GSAP Integration](#gsap-integration)
-    + [Hiding Scrollbar](#hiding-scrollbar)
-    + [SEO Configuration](#seo-configuration)
-      - [Using constants.ts](#using-constantsts)
-      - [Applying Metadata in Layouts](#applying-metadata-in-layouts)
-      - [Passing Individual Schema](#passing-individual-schema)
-      - [Extending Metadata for SEO](#extending-metadata-for-seo)
-      - [Structured Data and Rich Snippets](#structured-data-and-rich-snippets)
-      - [Using Astro SEO Integrations](#using-astro-seo-integrations)
-    + [Robots.txt](#robotstxt)
-    + [Markdown/MDX](#markdownmdx)
-      - [Image Integration](#image-integration)
-    + [Astro Integrations](#astro-integrations)
-    + [Flexibility with Integrations](#flexibility-with-integrations)
-  * [Tools and Technologies](#tools-and-technologies)
-    + [Preline UI](#preline-ui)
-    + [Tailwind CSS](#tailwind-css)
-    + [Deployment and Security](#deployment-and-security)
-    + [HTML Minification](#html-minification)
-  * [Contributing](#contributing)
-  * [License](#license)
 
-## Why Choose ScrewFast?
+- [Why Choose MujingFang?](#why-choose-screwfast)
+- [Features](#features)
+- [What's New](#whats-new)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Development Commands](#development-commands)
+- [Deployment](#deployment)
+  - [Building Your Site](#building-your-site)
+  - [Deploying to Vercel](#deploying-to-vercel)
+- [Project Structure](#project-structure)
+- [Static Assets and Public Resources](#static-assets-and-public-resources)
+- [Customization](#customization)
+  - [Editing Component Variables](#editing-component-variables)
+  - [Props in Component Instances](#props-in-component-instances)
+  - [Customizing Navigation and Footer Links](#customizing-navigation-and-footer-links)
+    - [Navigation Bar Links](#navigation-bar-links)
+    - [Footer Links](#footer-links)
+    - [Social Media Links](#social-media-links)
+- [Integrations and Enhancements](#integrations-and-enhancements)
+  - [Starlight Documentation](#starlight-documentation)
+  - [Lenis for Smooth Scrolling](#lenis-for-smooth-scrolling)
+  - [GSAP Integration](#gsap-integration)
+  - [Hiding Scrollbar](#hiding-scrollbar)
+  - [SEO Configuration](#seo-configuration)
+    - [Using constants.ts](#using-constantsts)
+    - [Applying Metadata in Layouts](#applying-metadata-in-layouts)
+    - [Passing Individual Schema](#passing-individual-schema)
+    - [Extending Metadata for SEO](#extending-metadata-for-seo)
+    - [Structured Data and Rich Snippets](#structured-data-and-rich-snippets)
+    - [Using Astro SEO Integrations](#using-astro-seo-integrations)
+  - [Robots.txt](#robotstxt)
+  - [Markdown/MDX](#markdownmdx)
+    - [Image Integration](#image-integration)
+  - [Astro Integrations](#astro-integrations)
+  - [Flexibility with Integrations](#flexibility-with-integrations)
+- [Tools and Technologies](#tools-and-technologies)
+  - [Preline UI](#preline-ui)
+  - [Tailwind CSS](#tailwind-css)
+  - [Deployment and Security](#deployment-and-security)
+  - [HTML Minification](#html-minification)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Why Choose MujingFang?
 
 - **Efficient Architecture:** Deploy faster with a template that's simple to set up and navigate.
 - **Optimized for Small Projects:** Perfect for crisp, professional web personas without excess complexity.
@@ -70,48 +71,55 @@ ScrewFast is an open-source template designed for quick and efficient web projec
 ## What's New
 
 ### Added Features
-- [x] **Social Share Component**: 
+
+- [x] **Social Share Component**:
+
   - Enables users to share blog posts on social media platforms.
   - Provides easy sharing of a blog post's title and URL.
   - Integrates Clipboard.js for link URL copy functionality.
 
 - [x] **Bookmark Button Component**:
+
   - Allows users to bookmark blog posts for later reference.
   - Provides a visual indication of whether a post is bookmarked.
   - Utilizes `localStorage` to store bookmarks locally in the browser.
-  - For SSR, replace `localStorage` with cookies to persist bookmarked posts. 
+  - For SSR, replace `localStorage` with cookies to persist bookmarked posts.
     - This setup opens up the possibility for the server to dynamically render content based on user-specific bookmarks, should you choose to implement this feature.
 
 - [x] **Post Feedback Component**:
   - Collects user feedback at the end of each blog post.
   - Serves as a UI demonstration with no live back-end integration.
-  
 - [x] **Starlight Documentation Theme Integration**:
+
   - A sleek, user-friendly, full-featured documentation theme, which enhances the readability and usability of documentation.
   - Offers a range of features such as site navigation, built-in search functionality, dark mode, syntax highlighting for code, and improved SEO.
   - Seamlessly integrates internationalization (i18n) to provide support for documentation in multiple languages, catering to a global audience.
   - Designed to facilitate ease of use while offering a modern aesthetic in both light and dark themes to accommodate user preferences.
 
 - [x] **Icon Set Component**:
+
   - Convenient and reusable Icon component that allows adding icons simply by providing a name prop.
   - Render any pre-defined icon SVG using `<Icon name="iconName" />` in your Astro components.
   - The Icon Component offers a centralized location for all SVG Icons across the project in one TypeScript file - allowing unified updates and easy maintenance.
   - **Note:** Developers have the option to use other community integrations like [astro-icons](https://github.com/natemoo-re/astro-icon). However, the author decided to create a custom icon set component for managing custom icons.
 
 - [x] **Internationalization (i18n) Features**:
+
   - Integrates [Astro’s internationalization (i18n) features](https://docs.astro.build/en/guides/internationalization/).
   - Additionally, a custom LanguagePicker component has been developed to facilitate language selection.
-  - Developers can access the monolingual version directly from [`monolingual-site` branch](https://github.com/mearashadowfax/ScrewFast/tree/monolingual-site).
+  - Developers can access the monolingual version directly from [`monolingual-site` branch](https://github.com/mearashadowfax/MujingFang/tree/monolingual-site).
 
 - [x] **Dynamic Table of Contents (ToC) with Scroll Progress Indicator**:
   - Enhances ease of navigation in insight posts by highlighting the relevant section in the ToC, and includes a progress indicator to visually represent scroll progress.
   - Developers seeking alternatives might consider the [remark-toc](https://github.com/remarkjs/remark-toc) plugin.
 
 ### Planned Improvements
+
 - Currently, there are no planned improvements. We'll update this section as plans develop.
 
 ### Bug Fixes
-- Currently, there are no known bugs. If you encounter any issues, please report them on our [issues page](https://github.com/mearashadowfax/ScrewFast/issues).
+
+- Currently, there are no known bugs. If you encounter any issues, please report them on our [issues page](https://github.com/mearashadowfax/MujingFang/issues).
 
 ## Getting Started
 
@@ -151,45 +159,43 @@ This creates a `dist/` directory with your built site (configurable via [outDir 
 
 ### Deploying to Vercel
 
-Click the button below to start deploying your project on Vercel:  
+Click the button below to start deploying your project on Vercel:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmearashadowfax%2FScrewFast)
 
 ## Project Structure
 
-ScrewFast organizes modular components, content, and layouts to streamline development and content management.
+MujingFang organizes modular components, content, and layouts to streamline development and content management.
 
 ```md
-
 src/
-├── components/           # Reusable components
-│   ├── Meta.astro        # Meta component for SEO
-│   ├── sections/         # Components for various sections of the website
-│   ├── ThemeIcon.astro   # Component for toggling light/dark themes
-│   └── ui/               # UI components categorized by functionality
-├── content/              # Markdown files for blog posts, insights, products, and site configuration
-│   ├── blog/
-│   ├── docs/           
-│   ├── insights/         
-│   ├── products/         
-│   └── config.ts         # Contains site-wide configuration options
-├── data_files/           # Strings stored as JSON files
-├── images/               # Static image assets for use across the website
-├── layouts/              # Components defining layout templates
-│   └── MainLayout.astro  # The main wrapping layout for all pages
-├── pages/                # Astro files representing individual pages and website sections
-│   ├── 404.astro         # Custom 404 page
-│   ├── blog/   
-│   ├── fr/               # Localized content
-│   ├── contact.astro     
-│   ├── index.astro       # The landing/home page
-│   ├── insights/         
-│   ├── products/         
-│   ├── robots.txt.ts     # Dynamically generates robots.txt
-│   └── services.astro
-├── styles/               # CSS styles
-└── utils/                # Shared utility functions and helpers
-
+├── components/ # Reusable components
+│ ├── Meta.astro # Meta component for SEO
+│ ├── sections/ # Components for various sections of the website
+│ ├── ThemeIcon.astro # Component for toggling light/dark themes
+│ └── ui/ # UI components categorized by functionality
+├── content/ # Markdown files for blog posts, insights, products, and site configuration
+│ ├── blog/
+│ ├── docs/  
+│ ├── insights/  
+│ ├── products/  
+│ └── config.ts # Contains site-wide configuration options
+├── data_files/ # Strings stored as JSON files
+├── images/ # Static image assets for use across the website
+├── layouts/ # Components defining layout templates
+│ └── MainLayout.astro # The main wrapping layout for all pages
+├── pages/ # Astro files representing individual pages and website sections
+│ ├── 404.astro # Custom 404 page
+│ ├── blog/  
+│ ├── fr/ # Localized content
+│ ├── contact.astro  
+│ ├── index.astro # The landing/home page
+│ ├── insights/  
+│ ├── products/  
+│ ├── robots.txt.ts # Dynamically generates robots.txt
+│ └── services.astro
+├── styles/ # CSS styles
+└── utils/ # Shared utility functions and helpers
 ```
 
 ## Static Assets and Public Resources
@@ -197,29 +203,26 @@ src/
 Static files served directly to the browser are within the `public` directory at the root of the project.
 
 ```md
-
 public/
 └── scripts/
-    └── vendor/
-        ├── gsap/ # Animations powered by GSAP (GreenSock Animation Platform)
-        │   └── gsap.min.js 
-        ├── lenis/ # Lenis script for smooth scrolling effects
-        │   └── lenis.js
-        └── preline/   # Preline UI plugins
-            ├── accordion/
-            ├── collapse/
-            ├── dropdown/
-            ├── overlay/
-            └── tabs/
-
-
+└── vendor/
+├── gsap/ # Animations powered by GSAP (GreenSock Animation Platform)
+│ └── gsap.min.js
+├── lenis/ # Lenis script for smooth scrolling effects
+│ └── lenis.js
+└── preline/ # Preline UI plugins
+├── accordion/
+├── collapse/
+├── dropdown/
+├── overlay/
+└── tabs/
 ```
 
 The scripts in the `public/scripts/vendor` directory are essential for the interactivity and aesthetic features of the website. Do not remove these unless you plan to replace their functionality.
 
 ## Customization
 
-ScrewFast allows for easy customization to suit your specific needs. Here are a couple of ways you can configure components and content:
+MujingFang allows for easy customization to suit your specific needs. Here are a couple of ways you can configure components and content:
 
 ### Editing Component Variables
 
@@ -229,7 +232,7 @@ Some components have properties defined as TypeScript variables within the compo
 // Define the string variables title and subTitle for the main heading and sub-heading text.
 const title: string = "Meeting Industry Demands";
 const subTitle: string =
-  "At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors.";
+  "At MujingFang, we tackle the unique challenges encountered in the hardware and construction sectors.";
 ```
 
 For collections of content like testimonials or statistics, edit the corresponding array of objects:
@@ -331,14 +334,13 @@ export const socialLinks: SocialLinks = {
 > [!NOTE]
 > Remember to add complete and valid URLs for the navigation to function properly. These customizations will reflect throughout your Astro site, promoting consistency across all pages.
 
-
 ## Integrations and Enhancements
 
-ScrewFast leverages the power of Astro — a modern, cutting-edge site building framework — and integrates it seamlessly with the utility-first CSS framework TailwindCSS, to deliver exceptional site performance and a seamless user experience. Here are some notable integrations and enhancements included in the project:
+MujingFang leverages the power of Astro — a modern, cutting-edge site building framework — and integrates it seamlessly with the utility-first CSS framework TailwindCSS, to deliver exceptional site performance and a seamless user experience. Here are some notable integrations and enhancements included in the project:
 
 ### Starlight Documentation
 
-ScrewFast is now equipped with the Starlight, which is designed to elevate the user's experience with documentation. This modern and elegant theme comes with a suite of features to make the content more accessible and pleasant to navigate.
+MujingFang is now equipped with the Starlight, which is designed to elevate the user's experience with documentation. This modern and elegant theme comes with a suite of features to make the content more accessible and pleasant to navigate.
 
 Key Features:
 
@@ -352,7 +354,7 @@ With Starlight, you gain access to a wealth of powerful features and integration
 
 > [!NOTE]
 > Dive into the Starlight's comprehensive feature list and learn how it can streamline your development process by visiting the theme's [documentation site](https://starlight.astro.build/).
-> 
+
 ### Lenis for Smooth Scrolling
 
 Experience buttery smooth scrolling with [Lenis](https://lenis.studiofreight.com/). We've integrated Lenis to provide an enhanced scrolling experience that's both fluid and responsive.
@@ -404,7 +406,7 @@ Please note that smooth scrolling can affect accessibility and performance on so
 
 ### GSAP Integration
 
- For individual product pages, [GSAP](https://gsap.com/) has been integrated to add engaging animations that execute as soon as the product page loads. You can find and modify the GSAP configuration in the script sections of the product page file located at `src/pages/products/[...slug].astro`:
+For individual product pages, [GSAP](https://gsap.com/) has been integrated to add engaging animations that execute as soon as the product page loads. You can find and modify the GSAP configuration in the script sections of the product page file located at `src/pages/products/[...slug].astro`:
 
 ```astro
 <script is:inline src="/scripts/vendor/gsap/gsap.min.js"></script>
@@ -441,25 +443,25 @@ For those who prefer custom-styled scrollbars, we suggest using the [tailwind-sc
 
 ```html
 <style>
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 </style>
 ```
 
 Additionally, update the `<html>` tag to remove the `scrollbar-hide` class, resulting in:
 
 ```html
-<html lang="en" class="scroll-pt-16">
+<html lang="en" class="scroll-pt-16"></html>
 ```
 
 ### SEO Configuration
 
-The SEO Configuration in the ScrewFast template is designed to empower users in optimizing their website's visibility on search engines and social media platforms. This documentation outlines the implementation details and usage instructions for effectively managing SEO settings.
+The SEO Configuration in the MujingFang template is designed to empower users in optimizing their website's visibility on search engines and social media platforms. This documentation outlines the implementation details and usage instructions for effectively managing SEO settings.
 
 #### Using constants.ts
 
@@ -471,7 +473,7 @@ To customize SEO settings, modify the values in the `constants.ts` file. Key con
 // constants.ts
 
 export const SITE = {
-  title: "ScrewFast",
+  title: "MujingFang",
   // Other SITE properties...
 };
 
@@ -538,8 +540,8 @@ Structured data in JSON-LD format can be managed by the `Meta.astro` component, 
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "ScrewFast",
-    "url": "https://screwfast.uk",
+    "name": "MujingFang",
+    "url": "https://mujingfang.power-funnels.com",
     "description": "Discover top-quality hardware tools and services"
   }}
 >
@@ -554,23 +556,24 @@ While the template provides a custom SEO solution, you may choose to utilize an 
 `robots.txt` is dynamically generated using the code found in src/pages/robots.txt.ts. This configuration follows the example from the Astro Docs:
 
 ```ts
-import type { APIRoute } from 'astro';
+import type { APIRoute } from "astro";
 
 const robotsTxt = `
 User-agent: *
 Allow: /
 
-Sitemap: ${new URL('sitemap-index.xml', import.meta.env.SITE).href}
+Sitemap: ${new URL("sitemap-index.xml", import.meta.env.SITE).href}
 `.trim();
 
 export const GET: APIRoute = () => {
   return new Response(robotsTxt, {
     headers: {
-      'Content-Type': 'text/plain; charset=utf-8',
+      "Content-Type": "text/plain; charset=utf-8",
     },
   });
 };
 ```
+
 ### Markdown/MDX
 
 #### Image Integration
@@ -578,11 +581,13 @@ export const GET: APIRoute = () => {
 The addition of `.vscode/settings.json` file in the root directory facilitates image integration directly into content collections within Markdown editors. This feature enables effortless creation of Markdown links with media files and seamless copying into the workspace.
 
 ##### Usage
+
 - **Paste/Drop Images**: Activate by pressing <kbd>Shift</kbd> while dropping the file.
 - **Markdown Link**: Image is linked using Markdown syntax `(![alt text](../../images/content/<path>))`.
 - **File Handling**: Images are organized in `src/images/content/<path>`.
 
 ##### Example
+
 Pasting `getting-started.png` into `src/content/post-1.md` results in:
 
 - Adding `![alt text](../../images/content/post-1/getting-started.png)` to `post-1.md`.
@@ -596,7 +601,7 @@ Pasting `getting-started.png` into `src/content/post-1.md` results in:
 Maximize your website's efficiency with these built-in Astro integrations:
 
 - [Astro Compressor](https://github.com/sondr3/astro-compressor#readme): Automatically compresses Astro-generated site using gzip or brotli, ensuring faster load times.
-Configure the compressor in `astro.config.mjs` file:
+  Configure the compressor in `astro.config.mjs` file:
 
 ```mjs
    export default defineConfig({
@@ -608,9 +613,9 @@ Configure the compressor in `astro.config.mjs` file:
 - [Astro Sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/): Automatically generates a sitemap for a website, which is vital for SEO and helping search engine bots crawl pages effectively. To set up the Astro Sitemap, be sure to specify your site's base URL and any additional options in `astro.config.mjs` file:
 
 ```mjs
-   export default defineConfig({
+export default defineConfig({
   // ...
-  site: 'https://example.com',
+  site: "https://example.com",
   integrations: [sitemap()],
 });
 ```
@@ -696,4 +701,4 @@ If you're interested in helping, you can contribute in several ways:
 
 ## License
 
-This project is released under the MIT License. Please read the [LICENSE](https://github.com/mearashadowfax/ScrewFast/blob/main/LICENSE) file for more details.
+This project is released under the MIT License. Please read the [LICENSE](https://github.com/mearashadowfax/MujingFang/blob/main/LICENSE) file for more details.
