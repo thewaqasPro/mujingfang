@@ -2,25 +2,28 @@
 // Import the necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
 import HeroSection from "@/components/sections/landing/HeroSection.astro";
-import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
-import ClientsSection from "@/components/sections/landing/ClientsSection.astro";
+// import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
+// import ClientsSection from "@/components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "@/components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@/components/sections/features/FeaturesNavs.astro";
-import TestimonialsSection from "@/components/sections/testimonials/TestimonialsSection.astro";
-import PricingSection from "@/components/sections/pricing/PricingSection.astro";
-import FAQ from "@/components/sections/FAQ.astro";
-import AnnouncementBanner from "@/components/ui/banners/AnnouncementBanner.astro";
+// import TestimonialsSection from "@/components/sections/testimonials/TestimonialsSection.astro";
+// import PricingSection from "@/components/sections/pricing/PricingSection.astro";
+// import FAQ from "@/components/sections/FAQ.astro";
+// import AnnouncementBanner from "@/components/ui/banners/AnnouncementBanner.astro";
+import InteractiveMap from "@/components/sections/InteractiveMap.astro";
 import ContactSection from "@/components/sections/ContactSection.astro";
+
+
 // import heroImage from "@/images/hero-image.avif";
 import heroImage from "@/images/hero-image.png";
-import faqs from "@/data_files/faqs.json";
+// import faqs from "@/data_files/faqs.json";
 import features from "@/data_files/features.json";
-import pricing from "@/data_files/pricing.json";
+// import pricing from "@/data_files/pricing.json";
 // import featureImage from "@/images/features-image.avif";
 import featureImage from "@/images/bg01.jpg";
-import construction from "@/images/construction-image.avif";
-import tools from "@/images/automated-tools.avif";
-import dashboard from "@/images/dashboard-image.avif";
+import construction from "@/images/1.avif";
+import tools from "@/images/2.avif";
+import dashboard from "@/images/3.avif";
 
 // Import necessary components
 import LeftSection from "@/components/ui/blocks/LeftSection.astro";
@@ -28,14 +31,14 @@ import RightSection from "@/components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@/components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
-import blueprints from "@/images/blueprints-image.avif";
-import personWorking from "@/images/person-working.avif";
-import beforeAfter from "@/images/before-after.avif";
-import constructionWorkers from "@/images/construction-workers.avif";
-import aerialView from "@/images/aerial-view.avif";
-import usingTools from "@/images/using-tools.avif";
-import progressBuilding from "@/images/progress-building.avif";
-import underConstruction from "@/images/under-construction.avif";
+import blueprints from "@/images/1.avif";
+import personWorking from "@/images/2.avif";
+// import beforeAfter from "@/images/before-after.avif";
+// import constructionWorkers from "@/images/construction-workers.avif";
+// import aerialView from "@/images/aerial-view.avif";
+import usingTools from "@/images/3.avif";
+import progressBuilding from "@/images/1.avif";
+import underConstruction from "@/images/2.avif";
 import { SITE } from "@/data_files/constants";
 
 import TestimonialsSectionAlt from "@/components/sections/testimonials/TestimonialsSectionAlt.astro";
@@ -114,25 +117,47 @@ const articles: Article[] = [
     isRightSection: false,
     title: "Ensuring Long-lasting Performance",
     subTitle:
-      "Our commitment to your project doesn't end at completion. MujingFang offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
+      `<div align="justify" class="p1_text">
+	<strong>WELCOME TO WOODWELL HOME IMPROVEMENT TOOLS!</strong><br><br>
+
+	<span style="font-size: 18px">W</span>oodwell Tools Manufacturing Limited is a foreign capital enterprise registered by Hong Kong Wah Tat Hardware &amp; Tools Limited. Founded in 1982, Woodwell has been serving furniture manufacturers, renovation professionals, and Do-It-Yourself-ers worldwide for more than 30 years.<br>
+
+<h3>3 Principles:</h3>
+<ul>
+<li>Customer Satisfaction</li>
+<li>Market Trend</li>
+<li>Technology Integrity</li>
+</ul>
+
+<h3>3 Brands:</h3>
+<ul>
+<li>Mujingfang</li>
+<li>Woodwell</li>
+<li>Lion</li>
+</ul>
+We have three brands to represent various product ranges and meet different regions' needs.
+<br>
+<h3>3 Products Range:</h3>
+<ul>
+<li>Woodworking Tools</li>
+<li>Tile Cutters</li>
+<li>Digital Measuring Tools</li>
+</ul>
+
+Mujingfang brand is first recognized by its full range of woodworking tools including hammers, chisels, axes, saws, rulers, and planes. With the same standard on quality, Woodwell brand established a professional High Power Tile Cutters manufacturing line and later a professional and DIY digital measuring tools line. Nowadays, Woodwell provides almost all hand tools a trader or DIYer needs, with high quality at a great value.<br>
+<h3>2 World Records:</h3>
+Our plane manufacturing site is the world's largest of its kind, comprising an area of 30,000 m<sup>2</sup>. 
+While the factory was constructed, our workers also crafted the world's biggest wooden plane - straightly out of fun and passion. This 1880lbs tool is now situated at the main entrance of the factory. <br>
+<h3>ONE World Distribution:</h3>
+Woodwell products have become not only carpenters and home renovators' best helpers, but also artwork collectors' best treasures. Dominating the Hong Kong market, these tools also stretch throughout Asia and across every continent. Woodwell welcomes prospective distributors. We provide technical and marketing support. Talk to us if you are interested in bringing our products to your country!<br>
+
+
+</div>`,
     img: usingTools,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
-  {
-    isRightSection: true,
-    title: "Crafting Bespoke Strategies for Unique Challenges",
-    subTitle:
-      "For our larger enterprise clients, MujingFang offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
-    single: false,
-    imgOne: progressBuilding,
-    imgOneAlt: "In progress building structure",
-    imgTwo: underConstruction,
-    imgTwoAlt: "Brown and gray building under construction",
-    btnExists: true,
-    btnTitle: "Read more",
-    btnURL: "#",
-  },
+
 ];
 
 ---
@@ -186,7 +211,7 @@ const articles: Article[] = [
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
+        heading: "Intuitive Process",
         content:
           "Navigate with ease using MujingFang's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
         svg: "dashboard",
@@ -312,7 +337,16 @@ const articles: Article[] = [
     testimonials={testimonials}
   />
 
+  <InteractiveMap/>
+
+  
+
+
+
+
   <ContactSection />
+
+
 
   <!-- <HeroSectionAlt
     title="Let's Build Together"
